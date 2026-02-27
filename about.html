@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Abolfazl Yousefi | Flutter Developer Profile</title>
+    <meta name="description" content="Interactive profile card of Abolfazl Yousefi - Flutter Developer with education timeline and contact information">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-about.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Floating Controls -->
+    <div class="floating-controls">
+        <button id="themeToggle" class="control-btn" aria-label="Toggle theme mode">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button id="langToggle" class="control-btn" aria-label="Switch language">
+            <span class="lang-text en">FA</span>
+            <span class="lang-text fa" style="display:none;">EN</span>
+        </button>
+        <a href="index.html" class="control-btn home-btn" aria-label="Back to main portfolio">
+            <i class="fas fa-home"></i>
+        </a>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-bg"></div>
+        <div class="particles-container" id="particles"></div>
+    </div>
+
+    <!-- Main Card -->
+    <main class="profile-card-wrapper">
+        <div class="profile-card">
+            <!-- Card Header -->
+            <div class="card-header">
+                <div class="header-gradient"></div>
+                <div class="header-pattern"></div>
+                
+                <!-- Avatar -->
+                <div class="avatar-container">
+                    <div class="avatar-frame">
+                        <img src="PHOTO/myphoto.jpg" 
+                             alt="Abolfazl Yousefi" 
+                             class="avatar"
+                             onerror="this.src='assets/default-avatar.jpg'">
+                        <div class="avatar-badge" title="Available for work">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="avatar-glow"></div>
+                </div>
+
+                <!-- Profile Info -->
+                <div class="profile-info">
+                    <h1 class="profile-name">
+                        <span class="en">Abolfazl Yousefi</span>
+                        <span class="fa" style="display:none;">ابوالفضل یوسفی</span>
+                    </h1>
+                    
+                    <h2 class="profile-title">
+                        <span class="en">Flutter Developer</span>
+                        <span class="fa" style="display:none;">توسعه‌دهنده فلاتر</span>
+                    </h2>
+                    
+                    <div class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="en">Isfahan, Iran</span>
+                        <span class="fa" style="display:none;">اصفهان، ایران</span>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div class="header-social">
+                    <a href="https://github.com/abolfazlYousofi" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/abolfazl-yousufi-25a486396" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://t.me/abolfazl" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="mailto:abolfazlyousefi@gmail.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card Content -->
+            <div class="card-content">
+                <!-- Navigation Tabs -->
+                <nav class="card-tabs">
+                    <button class="tab-btn active" data-tab="about">
+                        <i class="fas fa-user"></i>
+                        <span class="en">About</span>
+                        <span class="fa" style="display:none;">درباره</span>
+                    </button>
+                    <button class="tab-btn" data-tab="education">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span class="en">Education</span>
+                        <span class="fa" style="display:none;">تحصیلات</span>
+                    </button>
+                    <button class="tab-btn" data-tab="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span class="en">Contact</span>
+                        <span class="fa" style="display:none;">تماس</span>
+                    </button>
+                </nav>
+
+                <!-- Tab Panels -->
+                <div class="tab-panels">
+                    <!-- About Panel -->
+                    <section id="about" class="tab-panel active">
+                        <div class="panel-header">
+                            <h3 class="panel-title">
+                                <i class="fas fa-user-circle"></i>
+                                <span class="en">Professional Summary</span>
+                                <span class="fa" style="display:none;">خلاصه حرفه‌ای</span>
+                            </h3>
+                        </div>
+                        
+                        <div class="panel-content">
+                            <p class="bio-text">
+                                <span class="en">
+                                    Passionate Flutter developer specializing in building high-performance, 
+                                    cross-platform mobile applications. Expert in state management (Provider, Riverpod), 
+                                    RESTful API integration, and creating responsive, user-friendly interfaces. 
+                                    Committed to writing clean, maintainable code and following best practices.
+                                </span>
+                                <span class="fa" style="display:none;">
+                                    توسعه‌دهنده پرشور فلاتر با تخصص در ساخت برنامه‌های موبایل چندسکویی با عملکرد بالا.
+                                    متخصص در مدیریت وضعیت (Provider, Riverpod)، ادغام APIهای RESTful و ایجاد رابط‌های کاربری 
+                                    واکنش‌گرا و کاربرپسند. متعهد به نوشتن کد تمیز، قابل نگهداری و رعایت بهترین روش‌ها.
+                                </span>
+                            </p>
+                            
+                            <div class="skills-highlight">
+                                <div class="skill-tag">
+                                    <i class="fab fa-flutter"></i>
+                                    <span>Flutter & Dart</span>
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <span class="en">Cross-Platform</span>
+                                    <span class="fa" style="display:none;">چندسکویی</span>
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-code"></i>
+                                    <span class="en">Clean Code</span>
+                                    <span class="fa" style="display:none;">کد تمیز</span>
+                                </div>
+                                <div class="skill-tag">
+                                    <i class="fas fa-bolt"></i>
+                                    <span class="en">Fast Learner</span>
+                                    <span class="fa" style="display:none;">یادگیری سریع</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Education Panel -->
+                    <section id="education" class="tab-panel">
+                        <div class="panel-header">
+                            <h3 class="panel-title">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span class="en">Education Timeline</span>
+                                <span class="fa" style="display:none;">خط زمانی تحصیلات</span>
+                            </h3>
+                        </div>
+                        
+                        <div class="panel-content">
+                            <div class="timeline">
+                                <!-- Current Education -->
+                                <div class="timeline-item current">
+                                    <div class="timeline-marker">
+                                        <div class="marker-icon">
+                                            <i class="fas fa-university"></i>
+                                        </div>
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-year">2024 - Present</div>
+                                        <h4 class="timeline-title">
+                                            <span class="en">Bachelor of Software Engineering</span>
+                                            <span class="fa" style="display:none;">کارشناسی مهندسی نرم‌افزار</span>
+                                        </h4>
+                                        <div class="timeline-subtitle">
+                                            Shahid Ashrafi Esfahani University, Isfahan
+                                        </div>
+                                        <div class="timeline-details">
+                                            <span class="detail-tag">
+                                                <i class="fas fa-star"></i>
+                                                <span class="en">GPA: 17.8</span>
+                                                <span class="fa" style="display:none;">معدل: 17.8</span>
+                                            </span>
+                                            <span class="detail-tag">
+                                                <i class="fas fa-clock"></i>
+                                                <span class="en">Ongoing</span>
+                                                <span class="fa" style="display:none;">در حال تحصیل</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Associate Degree -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <div class="marker-icon">
+                                            <i class="fas fa-graduation-cap"></i>
+                                        </div>
+                                        <div class="timeline-line"></div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-year">2020 - 2022</div>
+                                        <h4 class="timeline-title">
+                                            <span class="en">Associate Degree in Software Engineering</span>
+                                            <span class="fa" style="display:none;">کاردانی مهندسی نرم‌افزار</span>
+                                        </h4>
+                                        <div class="timeline-subtitle">
+                                            Islamic Azad University, Khorasgan
+                                        </div>
+                                        <div class="timeline-details">
+                                            <span class="detail-tag">
+                                                <i class="fas fa-star"></i>
+                                                <span class="en">GPA: 16.0</span>
+                                                <span class="fa" style="display:none;">معدل: 16.0</span>
+                                            </span>
+                                            <span class="detail-tag">
+                                                <i class="fas fa-check"></i>
+                                                <span class="en">Completed</span>
+                                                <span class="fa" style="display:none;">تکمیل شده</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- High School -->
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">
+                                        <div class="marker-icon">
+                                            <i class="fas fa-school"></i>
+                                        </div>
+                                    </div>
+                                    <div class="timeline-content">
+                                        <div class="timeline-year">2016 - 2019</div>
+                                        <h4 class="timeline-title">
+                                            <span class="en">Diploma in Computer Networks</span>
+                                            <span class="fa" style="display:none;">دیپلم شبکه‌های کامپیوتری</span>
+                                        </h4>
+                                        <div class="timeline-subtitle">
+                                            Shamaee Zadeh Technical School
+                                        </div>
+                                        <div class="timeline-details">
+                                            <span class="detail-tag">
+                                                <i class="fas fa-star"></i>
+                                                <span class="en">GPA: 16.22</span>
+                                                <span class="fa" style="display:none;">معدل: 16.22</span>
+                                            </span>
+                                            <span class="detail-tag">
+                                                <i class="fas fa-check"></i>
+                                                <span class="en">Completed</span>
+                                                <span class="fa" style="display:none;">تکمیل شده</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Panel -->
+                    <section id="contact" class="tab-panel">
+                        <div class="panel-header">
+                            <h3 class="panel-title">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <span class="en">Get In Touch</span>
+                                <span class="fa" style="display:none;">در تماس باشید</span>
+                            </h3>
+                        </div>
+                        
+                        <div class="panel-content">
+                            <div class="contact-methods">
+                                <!-- Phone -->
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <h4 class="contact-label">
+                                            <span class="en">Phone</span>
+                                            <span class="fa" style="display:none;">تلفن</span>
+                                        </h4>
+                                        <a href="tel:+989130878900" class="contact-value">
+                                            +98 913 087 8900
+                                        </a>
+                                        <p class="contact-note">
+                                            <span class="en">Available 9AM - 6PM IRST</span>
+                                            <span class="fa" style="display:none;">در دسترس ۹ صبح تا ۶ عصر</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <h4 class="contact-label">
+                                            <span class="en">Email</span>
+                                            <span class="fa" style="display:none;">ایمیل</span>
+                                        </h4>
+                                        <a href="mailto:abolfazlyousefi@gmail.com" class="contact-value">
+                                            abolfazlyousefi@gmail.com
+                                        </a>
+                                        <p class="contact-note">
+                                            <span class="en">Response within 24 hours</span>
+                                            <span class="fa" style="display:none;">پاسخ در ۲۴ ساعت</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- LinkedIn -->
+                                <div class="contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fab fa-linkedin"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <h4 class="contact-label">
+                                            <span class="en">LinkedIn</span>
+                                            <span class="fa" style="display:none;">لینکدین</span>
+                                        </h4>
+                                        <a href="https://linkedin.com/in/abolfazl-yousufi-25a486396" 
+                                           class="contact-value"
+                                           target="_blank" 
+                                           rel="noopener noreferrer">
+                                            /abolfazl-yousufi
+                                        </a>
+                                        <p class="contact-note">
+                                            <span class="en">Professional profile</span>
+                                            <span class="fa" style="display:none;">پروفایل حرفه‌ای</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <div class="contact-cta">
+                                <button class="cta-btn" id="contactBtn">
+                                    <i class="fas fa-paper-plane"></i>
+                                    <span class="en">Let's Work Together</span>
+                                    <span class="fa" style="display:none;">بیایید با هم کار کنیم</span>
+                                </button>
+                                <p class="cta-note">
+                                    <span class="en">Open to freelance projects and full-time opportunities</span>
+                                    <span class="fa" style="display:none;">آماده برای پروژه‌های فریلنس و فرصت‌های تمام‌وقت</span>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Card Footer -->
+            <div class="card-footer">
+                <div class="footer-content">
+                    <a href="cv.html" class="back-to-portfolio">
+                        <i class="fas fa-arrow-left"></i>
+                        <span class="en">Back to Portfolio</span>
+                        <span class="fa" style="display:none;">بازگشت به پورتفولیو</span>
+                    </a>
+                    <p class="copyright">
+                        &copy; <span id="currentYear"></span> 
+                        <span class="en">Abolfazl Yousefi</span>
+                        <span class="fa" style="display:none;">ابوالفضل یوسفی</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script-about.js"></script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abolfazl Yousefi | Digital Masterpiece</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" data-en="A.Yousefi" data-fa="ای.یوسفی">A.Yousefi</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-en="Home" data-fa="خانه">Home</a></li>
+                <li><a href="#about" class="nav-link" data-en="About" data-fa="درباره">About</a></li>
+                <li><a href="#skills" class="nav-link" data-en="Skills" data-fa="مهارت‌ها">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-en="Projects" data-fa="پروژه‌ها">Projects</a></li>
+                <li><a href="#education" class="nav-link" data-en="Education" data-fa="تحصیلات">Education</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-fa="تماس">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="themeToggle" class="btn-icon" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+                <button id="langToggle" class="btn-icon" aria-label="Toggle language">EN</button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo" data-en="A.Yousefi" data-fa="ای.یوسفی">A.Yousefi</span>
+            <button class="close-menu" id="closeMenu"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav">
+            <li><a href="#home" class="mobile-link" data-en="Home" data-fa="خانه">Home</a></li>
+            <li><a href="#about" class="mobile-link" data-en="About" data-fa="درباره">About</a></li>
+            <li><a href="#skills" class="mobile-link" data-en="Skills" data-fa="مهارت‌ها">Skills</a></li>
+            <li><a href="#projects" class="mobile-link" data-en="Projects" data-fa="پروژه‌ها">Projects</a></li>
+            <li><a href="#education" class="mobile-link" data-en="Education" data-fa="تحصیلات">Education</a></li>
+            <li><a href="#contact" class="mobile-link" data-en="Contact" data-fa="تماس">Contact</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <div class="hero-badge ripple" data-en="Full-Stack Developer & UI/UX Designer" data-fa="توسعه‌دهنده فول استک و طراح UI/UX">Full-Stack Developer & UI/UX Designer</div>
+        <h1 class="hero-title gradient-text">Abolfazl Yousefi</h1>
+        <h2 class="hero-subtitle" data-en="Creating beautiful, functional digital experiences" data-fa="خالق تجربه‌های دیجیتال زیبا و کاربردی">Creating beautiful, functional digital experiences</h2>
+        <p class="hero-description" data-en="Founder & Lead Designer at Buildorab Studio. Specialized in frontend, desktop, and mobile development with a full-stack perspective." data-fa="بنیان‌گذار و طراح ارشد استودیو بیلدورب. متخصص در توسعه فرانت‌اند، دسکتاپ و موبایل با دیدگاه فول استک.">Founder & Lead Designer at Buildorab Studio. Specialized in frontend, desktop, and mobile development with a full-stack perspective.</p>
+        
+        <!-- Studio Highlights -->
+        <div class="studio-highlights glass" style="padding: 1.5rem; margin: 1.5rem 0; border-radius: 1rem;">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="fas fa-building" style="color: var(--primary);"></i>
+                <span data-en="Buildorab Studio at a Glance" data-fa="استودیو بیلدورب در یک نگاه">Buildorab Studio at a Glance</span>
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.8rem; margin-bottom: 0.8rem;">
+                <div style="text-align: center;">
+                    <span class="stat-number" style="font-size: 1.5rem;">10</span>
+                    <span class="stat-label" style="font-size: 0.8rem;" data-en="Day Delivery" data-fa="روز تحویل">Day Delivery</span>
+                </div>
+                <div style="text-align: center;">
+                    <span class="stat-number" style="font-size: 1.5rem;">3</span>
+                    <span class="stat-label" style="font-size: 0.8rem;" data-en="Months Support" data-fa="ماه پشتیبانی">Months Support</span>
+                </div>
+                <div style="text-align: center;">
+                    <span class="stat-number" style="font-size: 1.5rem;">96%</span>
+                    <span class="stat-label" style="font-size: 0.8rem;" data-en="Client Satisfaction" data-fa="رضایت مشتری">Client Satisfaction</span>
+                </div>
+            </div>
+            <a href="https://buildorab.com" target="_blank" class="btn btn-primary" style="width: 100%; justify-content: center;" data-en="Visit Buildorab Website" data-fa="مشاهده وبسایت بیلدورب">
+                <i class="fas fa-external-link-alt"></i> Visit Buildorab Website
+            </a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-count="5">0</span>
+                <span class="stat-label" data-en="Projects" data-fa="پروژه">Projects</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="3">0</span>
+                <span class="stat-label" data-en="Years Exp" data-fa="سال تجربه">Years Exp</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="96">0</span>
+                <span class="stat-label" data-en="% Satisfaction" data-fa="% رضایت">% Satisfaction</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="2.1">0</span>
+                <span class="stat-label" data-en="Avg. Load Time" data-fa="زمان بارگیری">Avg. Load Time</span>
+            </div>
+        </div>
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-en="View Projects" data-fa="مشاهده پروژه‌ها">View Projects</a>
+            <a href="#contact" class="btn btn-outline" data-en="Contact Me" data-fa="تماس با من">Contact Me</a>
+            <a href="CV.pdf" download class="btn btn-ghost"><i class="fas fa-download"></i> <span data-en="CV" data-fa="رزومه">CV</span></a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <div class="image-frame card-hover-effect">
+            <img src="PHOTO/myphoto.jpg" alt="Abolfazl Yousefi">
+        </div>
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title gradient-text" data-en="About Me" data-fa="درباره من">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-card glass card-hover-effect">
+                        <i class="fas fa-bullseye card-icon"></i>
+                        <h3 data-en="My Mission" data-fa="ماموریت من">My Mission</h3>
+                        <p data-en="To create digital experiences that not only look beautiful but also function flawlessly across all platforms. I believe in user-centered design, clean code, and following best practices in every project." data-fa="ایجاد تجربه‌های دیجیتالی که نه تنها زیبا هستند بلکه در تمام پلتفرم‌ها بدون نقص عمل می‌کنند. من به طراحی کاربر-محور، کد تمیز و رعایت بهترین شیوه‌ها در هر پروژه اعتقاد دارم.">To create digital experiences that not only look beautiful but also function flawlessly across all platforms. I believe in user-centered design, clean code, and following best practices in every project.</p>
+                        <p class="mt-2"><strong data-en="With expertise across frontend, desktop, and mobile, I bring a full-stack perspective to every project." data-fa="با تخصص در فرانت‌اند، دسکتاپ و موبایل، من یک دیدگاه فول استک به هر پروژه می‌آورم.">With expertise across frontend, desktop, and mobile, I bring a full-stack perspective to every project.</strong></p>
+                    </div>
+                    <div class="about-card glass card-hover-effect">
+                        <i class="fas fa-lightbulb card-icon"></i>
+                        <h3 data-en="My Approach" data-fa="رویکرد من">My Approach</h3>
+                        <ul class="approach-list">
+                            <li><i class="fas fa-check-circle"></i> <span data-en="Focus on user experience and interface design" data-fa="تمرکز بر تجربه کاربر و طراحی رابط">Focus on user experience and interface design</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-en="Modern web development practices" data-fa="روش‌های توسعه وب مدرن">Modern web development practices</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-en="Continuous learning and skill expansion" data-fa="یادگیری مستمر و گسترش مهارت">Continuous learning and skill expansion</span></li>
+                            <li><i class="fas fa-check-circle"></i> <span data-en="Clean code and proper documentation" data-fa="کد تمیز و مستندسازی مناسب">Clean code and proper documentation</span></li>
+                        </ul>
+                    </div>
+                    <div class="about-card glass card-hover-effect">
+                        <i class="fas fa-heart card-icon"></i>
+                        <h3 data-en="Passions & Interests" data-fa="علاقه‌مندی‌ها">Passions & Interests</h3>
+                        <div class="interest-tags">
+                            <span><i class="fas fa-paint-brush"></i> <span data-en="UI/UX Design" data-fa="طراحی UI/UX">UI/UX Design</span></span>
+                            <span><i class="fas fa-code"></i> <span data-en="Web Development" data-fa="توسعه وب">Web Development</span></span>
+                            <span><i class="fas fa-desktop"></i> <span data-en="Desktop Apps" data-fa="برنامه‌های دسکتاپ">Desktop Apps</span></span>
+                            <span><i class="fas fa-mobile-alt"></i> <span data-en="Mobile Tech" data-fa="تکنولوژی موبایل">Mobile Tech</span></span>
+                        </div>
+                    </div>
+                    <div class="about-card glass skills-preview card-hover-effect">
+                        <i class="fas fa-star card-icon"></i>
+                        <h3 data-en="Core Expertise" data-fa="تخصص‌های اصلی">Core Expertise</h3>
+                        <div class="skill-meter">
+                            <div class="skill-item">
+                                <div class="skill-header"><span data-en="Frontend (HTML/CSS/JS)" data-fa="فرانت‌اند (HTML/CSS/JS)">Frontend (HTML/CSS/JS)</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span data-en="UI/UX Design & Figma" data-fa="طراحی UI/UX و فیگما">UI/UX Design & Figma</span><span>85%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span data-en="C# Windows Development" data-fa="توسعه ویندوز با C#">C# Windows Development</span><span>75%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header"><span data-en="Flutter & Dart" data-fa="فلاتر و دارت">Flutter & Dart</span><span>60%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 60%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title gradient-text" data-en="Skills & Expertise" data-fa="مهارت‌ها و تخصص">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category glass card-hover-effect">
+                        <h3><i class="fas fa-palette"></i> <span data-en="Frontend & UI/UX" data-fa="فرانت‌اند و UI/UX">Frontend & UI/UX</span></h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Figma</span><span data-en="Responsive Design" data-fa="طراحی واکنش‌گرا">Responsive Design</span><span>Photoshop</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass card-hover-effect">
+                        <h3><i class="fas fa-desktop"></i> <span data-en="Desktop & Mobile" data-fa="دسکتاپ و موبایل">Desktop & Mobile</span></h3>
+                        <div class="skill-tags">
+                            <span>C# .NET</span><span>Flutter</span><span>Dart</span><span>WinForms</span><span>WPF</span><span>MVVM</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass card-hover-effect">
+                        <h3><i class="fas fa-tools"></i> <span data-en="Tools & Version Control" data-fa="ابزارها و کنترل نسخه">Tools & Version Control</span></h3>
+                        <div class="skill-tags">
+                            <span>Git</span><span>VS Code</span><span>Visual Studio</span>
+                        </div>
+                    </div>
+                    <div class="skill-category glass card-hover-effect">
+                        <h3><i class="fas fa-cogs"></i> <span data-en="CMS & Content" data-fa="مدیریت محتوا">CMS & Content</span></h3>
+                        <div class="skill-tags">
+                            <span>WordPress</span><span>Elementor</span><span>Premiere Pro</span><span>Adobe XD</span><span>SEO</span><span>After Effects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title gradient-text" data-en="Featured Projects" data-fa="پروژه‌های برجسته">Featured Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" data-en="All" data-fa="همه">All</button>
+                    <button class="filter-btn" data-filter="web" data-en="Web" data-fa="وب">Web</button>
+                    <button class="filter-btn" data-filter="uiux" data-en="UI/UX" data-fa="UI/UX">UI/UX</button>
+                    <button class="filter-btn" data-filter="csharp" data-en="C#" data-fa="سی شارپ">C#</button>
+                    <button class="filter-btn" data-filter="flutter" data-en="Flutter" data-fa="فلاتر">Flutter</button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- BuildCorp -->
+                    <div class="project-card glass card-hover-effect" data-category="web">
+                        <div class="project-img">
+                            <img src="PHOTO/construction-company.jpg" alt="BuildCorp">
+                            <div class="project-overlay">
+                                <a href="https://github.com/abolfazlYousofi/construction-portfolio" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://buildorab.com/pages/projects/corporate/construction-portfolio/index.html" target="_blank" class="project-link"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge" data-en="Business Website" data-fa="وبسایت شرکتی">Business Website</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">BuildCorp</h3>
+                            <p class="project-desc" data-en="Corporate website for an architecture firm with portfolio, history, and multi-language contact system." data-fa="وبسایت شرکتی برای شرکت معماری با پورتفولیو، تاریخچه و سیستم تماس چندزبانه.">Corporate website for an architecture firm with portfolio, history, and multi-language contact system.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span><span>CSS3</span><span>JS</span><span>GSAP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/abolfazlYousofi/construction-portfolio" target="_blank"><i class="fab fa-github"></i> <span data-en="Code" data-fa="کد">Code</span></a>
+                                <a href="https://buildorab.com/pages/projects/corporate/construction-portfolio/index.html" target="_blank"><i class="fas fa-eye"></i> <span data-en="Demo" data-fa="نمایش">Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Creative Agency 
+                    <div class="project-card glass card-hover-effect" data-category="web uiux">
+                        <div class="project-img">
+                            <img src="PHOTO/vista-realty.jpg" alt="Creative Agency">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge" data-en="Portfolio" data-fa="نمونه‌کار">Portfolio</span>
+                                <span class="project-badge uiux">UI/UX</span>
+                                <span class="project-year">2024</span>
+                            </div>
+                            <h3 class="project-title">Creative Agency</h3>
+                            <p class="project-desc" data-en="Interactive portfolio with smooth animations and case studies." data-fa="پورتفولیوی تعاملی با انیمیشن‌های روان و کیس‌استادی.">Interactive portfolio with smooth animations and case studies.</p>
+                            <div class="project-tech">
+                                <span>GSAP</span><span>Three.js</span><span>React</span><span>Framer</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> <span data-en="Code" data-fa="کد">Code</span></a>
+                                <a href="#"><i class="fas fa-eye"></i> <span data-en="Demo" data-fa="نمایش">Demo</span></a>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- MindSkill -->
+                    <div class="project-card glass card-hover-effect" data-category="web">
+                        <div class="project-img">
+                            <img src="PHOTO/mindskill.jpg" alt="MindSkill">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://buildorab.com/pages/projects/corporate/mindskill-case-study/" target="_blank" class="project-link"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge" data-en="Business Website" data-fa="وبسایت شرکتی">Business Website</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">MindSkill</h3>
+                            <p class="project-desc" data-en="Training platform for soft skills with courses and user dashboard." data-fa="پلتفرم آموزش مهارت‌های نرم با دوره‌ها و داشبورد کاربری.">Training platform for soft skills with courses and user dashboard.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span><span>CSS3</span><span>JS</span><span>Chart.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> <span data-en="Code" data-fa="کد">Code</span></a>
+                                <a href="https://buildorab.com/pages/projects/corporate/mindskill-case-study/" target="_blank"><i class="fas fa-eye"></i> <span data-en="Demo" data-fa="نمایش">Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vista Realty -->
+                    <div class="project-card glass card-hover-effect" data-category="web">
+                        <div class="project-img">
+                            <img src="PHOTO/vista-realty.jpg" alt="Vista Realty">
+                            <div class="project-overlay">
+                                <a href="https://github.com/abolfazlYousofi/vista-realty" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://buildorab.com/pages/projects/corporate/vista-realty/index.html" target="_blank" class="project-link"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge" data-en="Business Website" data-fa="وبسایت شرکتی">Business Website</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">Vista Realty</h3>
+                            <p class="project-desc" data-en="Real estate website with advanced filters and map integration." data-fa="وبسایت آژانس املاک با فیلترهای پیشرفته و نقشه.">Real estate website with advanced filters and map integration.</p>
+                            <div class="project-tech">
+                                <span>Tailwind</span><span>Swiper</span><span>Maps API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/abolfazlYousofi/vista-realty" target="_blank"><i class="fab fa-github"></i> <span data-en="Code" data-fa="کد">Code</span></a>
+                                <a href="https://buildorab.com/pages/projects/corporate/vista-realty/index.html" target="_blank"><i class="fas fa-eye"></i> <span data-en="Demo" data-fa="نمایش">Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Iron Peak Gym -->
+                    <div class="project-card glass card-hover-effect" data-category="web uiux">
+                        <div class="project-img">
+                            <img src="PHOTO/gym.jpg" alt="Iron Peak">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="https://buildorab.com/pages/projects/landing/gym/index.html" class="project-link"><i class="fas fa-eye"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="project-badge" data-en="Landing Page" data-fa="صفحه فرود">Landing Page</span>
+                                <span class="project-badge uiux">UI/UX</span>
+                                <span class="project-year">2026</span>
+                            </div>
+                            <h3 class="project-title">Iron Peak Gym</h3>
+                            <p class="project-desc" data-en="High-converting landing page with dark theme and motivational design." data-fa="لندینگ پیج با نرخ تبدیل بالا با تم تیره و طراحی انگیزشی.">High-converting landing page with dark theme and motivational design.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span><span>CSS3</span><span>JS</span><span>AOS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> <span data-en="Code" data-fa="کد">Code</span></a>
+                                <a href="https://buildorab.com/pages/projects/landing/gym/index.html"><i class="fas fa-eye"></i> <span data-en="Demo" data-fa="نمایش">Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-more">
+                    <a href="https://github.com/abolfazlYousofi" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> <span data-en="View More on GitHub" data-fa="مشاهده بیشتر در گیت‌هاب">View More on GitHub</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title gradient-text" data-en="Education & Certifications" data-fa="تحصیلات و گواهینامه‌ها">Education & Certifications</h2>
+                <div class="education-timeline">
+                    <div class="timeline-item glass card-hover-effect">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024 - Present</div>
+                        <div class="timeline-content">
+                            <h3 data-en="Bachelor of Software Engineering" data-fa="کارشناسی مهندسی نرم‌افزار">Bachelor of Software Engineering</h3>
+                            <p class="timeline-sub" data-en="Shahid Ashrafi Esfahani University · GPA: 17.8" data-fa="دانشگاه شهید اشرفی اصفهانی · معدل: ۱۷.۸">Shahid Ashrafi Esfahani University · GPA: 17.8</p>
+                            <p data-en="Currently pursuing, focused on frontend, UI/UX, C#, and Flutter." data-fa="در حال تحصیل، تمرکز بر فرانت‌اند، UI/UX، سی شارپ و فلاتر.">Currently pursuing, focused on frontend, UI/UX, C#, and Flutter.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item glass card-hover-effect">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - 2022</div>
+                        <div class="timeline-content">
+                            <h3 data-en="Associate Degree in Software Engineering" data-fa="کاردانی مهندسی نرم‌افزار">Associate Degree in Software Engineering</h3>
+                            <p class="timeline-sub" data-en="Islamic Azad University · GPA: 16.0" data-fa="دانشگاه آزاد اسلامی · معدل: ۱۶.۰">Islamic Azad University · GPA: 16.0</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item glass card-hover-effect">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2016 - 2019</div>
+                        <div class="timeline-content">
+                            <h3 data-en="Diploma in Computer Networks" data-fa="دیپلم شبکه‌های کامپیوتری">Diploma in Computer Networks</h3>
+                            <p class="timeline-sub" data-en="Shamaee Zadeh Technical School · GPA: 16.22" data-fa="هنرستان فنی شماعی‌زاده · معدل: ۱۶.۲۲">Shamaee Zadeh Technical School · GPA: 16.22</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card glass card-hover-effect">
+                        <i class="fas fa-palette"></i>
+                        <h4 data-en="UI/UX Design with Figma" data-fa="طراحی UI/UX با فیگما">UI/UX Design with Figma</h4>
+                        <p>Udemy · 2023</p>
+                    </div>
+                    <div class="cert-card glass card-hover-effect">
+                        <i class="fas fa-code"></i>
+                        <h4 data-en="Modern Frontend Development" data-fa="توسعه فرانت‌اند مدرن">Modern Frontend Development</h4>
+                        <p>Coursera · 2023</p>
+                    </div>
+                    <div class="cert-card glass card-hover-effect">
+                        <i class="fas fa-desktop"></i>
+                        <h4 data-en="C# Windows Development" data-fa="توسعه ویندوز با سی شارپ">C# Windows Development</h4>
+                        <p>Microsoft Learn · 2023</p>
+                    </div>
+                    <div class="cert-card glass card-hover-effect">
+                        <i class="fab fa-flutter"></i>
+                        <h4 data-en="Flutter Development Basics" data-fa="مبانی توسعه فلاتر">Flutter Development Basics</h4>
+                        <p>Flutter Official · 2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title gradient-text" data-en="Get In Touch" data-fa="تماس با من">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info glass">
+                        <div class="contact-item card-hover-effect">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-en="Email" data-fa="ایمیل">Email</h4>
+                                <p><a href="mailto:abolfazlyousefi@gmail.com">abolfazlyousefi@gmail.com</a></p>
+                                <small data-en="Response within 24h" data-fa="پاسخ در ۲۴ ساعت">Response within 24h</small>
+                            </div>
+                        </div>
+                        <div class="contact-item card-hover-effect">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4 data-en="Phone" data-fa="تلفن">Phone</h4>
+                                <p><a href="tel:+989130878900">+98 913 087 8900</a></p>
+                                <small data-en="9 AM - 6 PM IRST" data-fa="۹ صبح تا ۶ عصر IRST">9 AM - 6 PM IRST</small>
+                            </div>
+                        </div>
+                        <div class="contact-item card-hover-effect">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-en="Location" data-fa="موقعیت">Location</h4>
+                                <p data-en="Isfahan, Iran" data-fa="اصفهان، ایران">Isfahan, Iran</p>
+                                <small data-en="Open to remote worldwide" data-fa="آماده برای دورکاری در سراسر جهان">Open to remote worldwide</small>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/abolfazlYousofi" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/abolfazl-yousufi-25a486396" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://t.me/AbolfazlYousufi" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.instagram.com/ab._.alpha" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form glass" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" data-en="Full Name *" data-fa="نام کامل *">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe" data-en-placeholder="John Doe" data-fa-placeholder="نام شما">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-en="Email *" data-fa="ایمیل *">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com" data-en-placeholder="john@example.com" data-fa-placeholder="ایمیل شما">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-en="Subject *" data-fa="موضوع *">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry" data-en-placeholder="Project Inquiry" data-fa-placeholder="موضوع پروژه">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-en="Message *" data-fa="پیام *">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..." data-en-placeholder="Tell me about your project..." data-fa-placeholder="در مورد پروژه‌تان بگویید..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn ripple" data-en="Send Message" data-fa="ارسال پیام">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> <span data-en="Abolfazl Yousefi. All rights reserved." data-fa="ابوالفضل یوسفی. کلیه حقوق محفوظ است.">Abolfazl Yousefi. All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+
+</body>
+</html>
