@@ -30,4 +30,4 @@ This is my personal portfolio and CV website – a modern, fully responsive, sin
 
 ---
 
-## 📁 Project Structure
+
